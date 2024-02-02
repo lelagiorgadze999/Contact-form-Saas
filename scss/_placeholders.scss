@@ -1,0 +1,17 @@
+%responsivecontainer {
+  max-width: 1263px;
+  width: 100%;
+  margin: 0 auto;
+  @media (max-width: 1300px) {
+    width: 90%;
+  }
+}
+
+%container-image {
+  max-width: 1319px;
+  width: 100%;
+  margin: 0 auto;
+  @media (max-width: 1300px) {
+    width: 95%;
+  }
+}

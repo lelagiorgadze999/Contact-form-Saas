@@ -1,0 +1,135 @@
+.s-1 {
+  .container {
+    h1 {
+      @media (max-width: 990px) {
+        //   width: 300px;
+        font-size: 25px;
+      }
+      @media (max-width: 330px) {
+        font-size: 18px;
+      }
+    }
+    .myform {
+      @media (max-width: 500px) {
+        flex-direction: column;
+      }
+      .left-box {
+        @media (max-width: 500px) {
+          height: 150px;
+        }
+      }
+      .right-box {
+        @media (max-width: 500px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.s-2 {
+  .container {
+    .phone {
+      @media (max-width: 650px) {
+        display: none;
+      }
+      @media (max-width: 500px) {
+        display: flex;
+      }
+    }
+    @media (max-width: 500px) {
+      @include myflex(column, center, center);
+      gap: 20px;
+    }
+  }
+}
+
+.s-3 {
+  .container {
+    h1 {
+      @media (max-width: 990px) {
+        width: 300px;
+        font-size: 25px;
+      }
+      @media (max-width: 330px) {
+        font-size: 18px;
+        width: 240px;
+      }
+    }
+  }
+  .container1 {
+    @media (max-width: 990px) {
+      justify-content: space-around;
+      @media (max-width: 330px) {
+        @include myflex(column, center, center);
+        gap: 15px;
+      }
+    }
+
+    img {
+      @media (max-width: 1180px) {
+        width: 300px;
+      }
+      @media (max-width: 990px) {
+        width: 200px;
+      }
+      @media (max-width: 650px) {
+        width: 100px;
+      }
+      @media (max-width: 330px) {
+        width: 230px;
+      }
+    }
+  }
+}
+footer {
+    @media (max-width: 300px) {
+        padding-top: 50px;
+      }
+  .container {
+    @media (max-width: 1166px) {
+      gap: 0;
+      justify-content: space-between;
+      @media (max-width: 500px) {
+        flex-direction: column;
+        gap: 20px;
+        width: 80%;
+      }
+      .zwtta {
+        margin-right: 0;
+        p {
+          @media (max-width: 800px) {
+            width: 210px;
+            font-size: 14px;
+          }
+        }
+        h2 {
+          @media (max-width: 300px) {
+            font-size: 20px;
+          }
+        }
+        @media (max-width: 300px) {
+          display: none;
+        }
+      }
+    }
+    .privacy {
+      @media (max-width: 800px) {
+        display: none;
+      }
+    }
+    .useful {
+      @media (max-width: 670px) {
+        display: none;
+      }
+    }
+
+    .contact {
+      @media (max-width: 670px) {
+        .info-boxes {
+          gap: 5px;
+        }
+      }
+    }
+  }
+}
